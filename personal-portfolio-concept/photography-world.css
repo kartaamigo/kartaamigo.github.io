@@ -1,0 +1,131 @@
+.photography-entry{position:absolute;left:5%;bottom:115px;z-index:8;display:flex;flex-direction:column;align-items:center;width:27%;max-width:340px;padding:0;gap:8px}
+.photography-entry .folder-launch{height:200px}
+.photography-entry-label{font:9px/1.6 Consolas,monospace;letter-spacing:2px;color:#c0a68f}
+.photography-entry .folder-photo{--folder-accent:#e9ad79;--folder-rgb:215,152,99;width:100%;max-width:340px}
+body[data-world=neutral] .photography-entry .folder-photo{width:100%}
+.folder-photo .folder-name{font-size:34px;letter-spacing:-1px}
+.folder-photo .folder-back:before{background:#35271f}
+.folder-photo[data-open=true] .folder-action>span{transform:translateY(3px)}
+.photography-world{display:none}
+body:not([data-world=neutral]) .photography-entry{display:none}
+body[data-world=photography] .hero{display:none}
+body[data-world=photography] .portfolio-content>:not(.photography-world):not(.contact):not(footer){display:none}
+body[data-world=photography] .photography-world{display:block;padding-top:85px;padding-bottom:90px;background:radial-gradient(ellipse at 90% 25%,#8d653523,transparent 60%),#111016;color:#efece4}
+body[data-world=photography] .portfolio-content>.contact,body[data-world=photography] .portfolio-content>footer,body[data-world=photography]>header>nav{display:none}
+.photo-navigation{display:flex;justify-content:flex-end;gap:30px;padding-bottom:25px;font:12px Arial,sans-serif;color:#d8cabf}
+.photo-hero{position:relative;min-height:600px;border-radius:20px;overflow:hidden;display:flex;align-items:flex-end;background:#101314}
+.photo-hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 48%}
+.photo-hero:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,#08090de8,transparent 95%),linear-gradient(90deg,#08090d80,transparent)}
+.photo-hero-copy{position:relative;z-index:1;padding:55px;max-width:850px}
+.portfolio-content .photo-hero h2{font-size:clamp(45px,5vw,80px);line-height:1.1;margin:24px 0}
+.portfolio-content .photo-hero p{font:15px/1.8 Arial,sans-serif;color:#e0d9d2;max-width:510px;margin-bottom:25px}
+.photo-works,.photo-about,.photo-contact-section{scroll-margin-top:120px}
+.photo-categories{display:flex;flex-wrap:wrap;gap:12px;margin-top:65px}
+.photo-categories button{border:1px solid #645144;border-radius:30px;padding:14px 22px;background:transparent;color:#dbc5b4;cursor:pointer;font:13px Arial,sans-serif}
+.photo-categories button[aria-pressed=true]{background:#e9ad79;color:#151119;border-color:#e9ad79}
+#photo-street[hidden],#photo-college[hidden]{display:none!important}
+.photo-about{margin-top:100px}
+#photo-college{padding:45px 0;min-height:250px}
+.portfolio-content #photo-college h3,.portfolio-content .photo-contact-section h3{font:700 clamp(26px,3vw,42px)/1.3 Arial,sans-serif;color:#efece4}
+.portfolio-content #photo-college p,.portfolio-content .photo-contact-section p{font:14px/1.8 Arial,sans-serif;color:#beb2a9}
+.photo-contact-section{margin-top:85px;padding-top:50px;border-top:1px solid #493c31}
+.photo-contact-section .photography-contact{margin-top:15px}
+.photo-footer{display:flex;justify-content:space-between;gap:20px;margin-top:70px;padding-top:25px;border-top:1px solid #493c31;font:11px/1.8 Arial,sans-serif;color:#ac9a8e}
+@media(max-width:800px){.photo-hero{min-height:550px}.photo-hero-copy{padding:25px}.portfolio-content .photo-hero h2{font-size:40px}.photo-navigation{gap:22px;justify-content:center}.photo-about{margin-top:65px}.photo-footer{flex-wrap:wrap}}
+.portfolio-content .photography-world>.tiny{color:#c4a487}
+.portfolio-content .photography-world h2{font:400 clamp(75px,9vw,160px)/.95 ImpactLocal,'Arial Black',sans-serif;letter-spacing:-1px;margin:30px 0 70px;outline:none}
+.photography-world h2 em{color:#e9ad79;font-style:normal}
+.photography-intro{display:grid;grid-template-columns:200px 1fr;gap:55px;max-width:950px;align-items:start}
+.photography-symbol{font:150px/1 Arial,sans-serif;color:#c8966d}
+.portfolio-content .photography-intro h3{font:700 32px/1.3 Arial,sans-serif;margin:0 0 23px;color:#efece4}
+.portfolio-content .photography-intro p{font:15px/1.8 Arial,sans-serif;color:#beb2a9;max-width:640px;margin:14px 0}
+.photography-tags{display:flex;gap:12px;margin:25px 0}
+.photography-tags span{border:1px solid #82664c;border-radius:30px;padding:10px 15px;font:11px Arial,sans-serif;color:#dbc5b4}
+.photography-contact{display:inline-block;border:1px solid #bb8c63;border-radius:30px;padding:15px 22px;font:12px Arial,sans-serif;color:#f0decf}
+.portfolio-content .photography-pending{font:12px/1.8 Arial,sans-serif;color:#958375;border-top:1px solid #493c31;margin-top:65px;padding-top:25px}
+@media(max-width:800px){.photography-entry{padding-top:20px;padding-bottom:55px}.photography-entry .folder-launch{height:175px}.folder-photo .folder-name{font-size:29px}body[data-world=photography] .photography-world{padding-top:55px;padding-bottom:60px}.portfolio-content .photography-world h2{font-size:20vw;margin-bottom:45px}.photography-intro{grid-template-columns:1fr;gap:22px}.photography-symbol{font-size:75px}.portfolio-content .photography-intro h3{font-size:26px}.portfolio-content .photography-intro p{font-size:13px}}
+.studio-camera{position:absolute;left:2.073%;top:69.298%;width:28.947%;height:24.96%;z-index:5;padding:0;background:transparent;border:0;border-radius:25%;cursor:pointer;pointer-events:auto}
+.studio-camera-glow{position:absolute;inset:0;z-index:1;pointer-events:none;background:url('assets/studio-camera-halo-white.png') center/contain no-repeat}
+.studio-camera span{position:absolute;bottom:-30px;left:0;display:flex;align-items:center;gap:9px;white-space:nowrap;padding:6px 0;background:none;border:0;color:#d8d3dd;font:11px Arial,sans-serif;letter-spacing:.3px;text-shadow:0 2px 8px #000;transition:color .25s,transform .25s;pointer-events:auto}
+.studio-camera span b{font-size:23px;font-weight:400;line-height:1}
+.studio-camera:hover span,.studio-camera:focus-visible span{color:#fff;transform:translateY(-2px)}
+.studio-camera:focus-visible{outline:2px solid #e9ad79;outline-offset:4px}
+.photography-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:65px}
+.photo-albums-heading{grid-column:1/-1}
+.portfolio-content .photo-albums-heading h3{font:700 28px/1.3 Arial,sans-serif;color:#efece4;margin:0 0 12px}
+.portfolio-content .photo-albums-heading p{font:13px/1.7 Arial,sans-serif;color:#beb2a9;margin:0 0 12px}
+.photography-gallery button{display:block;width:100%;break-inside:avoid;margin:0 0 22px;padding:0;background:#201c24;border:1px solid #ffffff20;border-radius:12px;overflow:hidden;cursor:pointer;color:#dbc5b4;text-align:left}
+.photography-gallery img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;transition:filter .3s}
+.photography-gallery button:hover img{filter:brightness(1.1)}
+.photography-gallery button>span{display:flex;justify-content:space-between;padding:12px 15px;font:11px Consolas,monospace}
+.photography-gallery button>span{align-items:center;gap:12px}
+.photography-gallery strong{font:600 16px/1.4 Arial,sans-serif;margin-right:auto}
+.photography-gallery small{white-space:nowrap;font:11px Arial,sans-serif;color:#beb2a9}
+.photography-lightbox .photo-album-title{position:absolute;left:20px;top:14px;margin:0;font:13px/1.5 Arial,sans-serif;color:#dbc5b4}
+.photography-lightbox>img{touch-action:pan-y}
+.photo-controls .photo-prev,.photo-controls .photo-next{position:absolute;top:50%;transform:translateY(-50%);background:#141118c9}
+.photo-controls .photo-prev{left:20px}
+.photo-controls .photo-next{right:20px}
+.photography-lightbox button:disabled{opacity:.25;cursor:default}
+.photography-lightbox{width:min(1100px,94vw);max-width:94vw;max-height:94dvh;padding:45px 16px 16px;background:#141118;border:1px solid #685344;border-radius:16px;color:#efece4}
+.photography-lightbox::backdrop{background:#09080de8;backdrop-filter:blur(8px)}
+.photography-lightbox>img{display:block;width:100%;height:72dvh;object-fit:contain}
+.photo-close{position:absolute;right:16px;top:10px}
+.photography-lightbox button{border:1px solid #82664c;border-radius:24px;background:#29202b;color:#efece4;padding:10px 16px;cursor:pointer}
+.photo-controls{display:flex;justify-content:center;align-items:center;gap:25px;margin-top:12px;font:12px Consolas,monospace}
+@media(max-width:800px){.photography-gallery{columns:2;column-gap:12px}.photography-gallery button{margin-bottom:12px}}
+@media(max-width:480px){.photography-gallery{grid-template-columns:1fr}.photo-controls .photo-prev{left:5px}.photo-controls .photo-next{right:5px}.photography-gallery strong{font-size:14px}}
+@media(max-width:800px){body[data-world=neutral] .photography-entry .folder-photo{width:min(280px,90%)}}
+@media(prefers-reduced-motion:reduce){.studio-camera span,.photography-gallery img{transition:none}}
+/* Photography overview and album pages. */
+.photography-world>.photo-about{margin-top:45px;margin-bottom:45px;max-width:none}
+.photography-world .photography-symbol{display:block;width:132px;height:174px;object-fit:contain;justify-self:center}
+@media(max-width:800px){.photography-world .photography-symbol{width:80px;height:105px;justify-self:start}}
+body[data-world=photography] .photography-world{background:#101012;padding-top:28px}
+.photo-navigation{color:#b9bac1}
+.photo-hero{min-height:640px;background:#101012;border-radius:0;overflow:hidden;scroll-margin-top:100px}
+.photo-mosaic{position:absolute;inset:0;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));grid-auto-rows:145px;gap:12px;align-content:start}
+.photo-mosaic button{position:relative;border:0;padding:0;border-radius:16px;overflow:hidden;background:#15161b;cursor:pointer;color:#fff;min-width:0}
+.photo-mosaic button:nth-child(7n+2){grid-column:span 2}
+.photo-mosaic img{width:100%;height:100%;object-fit:cover;display:block;filter:brightness(.64);transition:filter .3s ease}
+.photo-mosaic button>span{position:absolute;inset:auto 0 0;padding:20px 14px 14px;background:linear-gradient(transparent,#08090de8);font:600 13px/1.4 Arial,sans-serif;opacity:0;transition:opacity .2s}
+.photo-mosaic button b{display:block;font:11px/1.5 Arial,sans-serif;margin-top:5px;color:#d7d8df}
+.photo-mosaic button:hover img,.photo-mosaic button:focus-visible img{filter:brightness(1)}
+.photo-mosaic button:hover>span,.photo-mosaic button:focus-visible>span{opacity:1}
+.photo-hero::after{inset:55% 0 0;background:linear-gradient(transparent,#101012);pointer-events:none;z-index:1}
+.photo-hero-copy{position:absolute;left:50%;top:50%;width:max-content;max-width:90%;transform:translate(-50%,-50%);padding:24px 30px;text-align:center;pointer-events:none;z-index:2;border-radius:20px;background:#101012cc;backdrop-filter:blur(8px)}
+.portfolio-content .photo-hero h2{font:600 clamp(30px,4vw,60px)/1.1 Arial,sans-serif;letter-spacing:-1.5px;margin:15px 0}
+.portfolio-content .photo-hero p{font:15px/1.6 Arial,sans-serif;margin:0 auto 12px;color:#dedee4}
+.photo-hero-copy small{font:12px/1.6 Arial,sans-serif;color:#c0c1ca}
+.photo-hero-copy .tiny{color:#c0c1ca}
+.photo-categories{margin-top:32px}
+.photo-categories button{border:0;background:#15161b;color:#c9cad3}
+.photo-categories button[aria-pressed=true]{background:#30323c;color:#fff;border:0}
+.photography-gallery{display:block;margin-top:35px;scroll-margin-top:110px}
+.photography-gallery[hidden]{display:none!important}
+.photography-gallery .photo-overview-return{display:inline-block;width:auto;margin:0 0 24px;padding:12px 18px;border:0;border-radius:24px;background:#23252d;color:#eee;font:13px Arial,sans-serif}
+.portfolio-content .photo-albums-heading h3{font:600 clamp(28px,3.5vw,48px)/1.15 Arial,sans-serif;letter-spacing:-1px;color:#eee}
+.portfolio-content .photo-albums-heading p{color:#aeb0bc}
+.photo-album-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0 30px}
+.photography-gallery .photo-album-tabs button{width:auto;margin:0;border:0;border-radius:24px;padding:10px 16px;background:#15161b;color:#b8bac5;font:12px Arial,sans-serif}
+.photography-gallery .photo-album-tabs button[aria-pressed=true]{background:#ececf0;color:#101012}
+.photo-masonry{columns:4;column-gap:18px}
+.photography-gallery .photo-masonry button{display:block;width:100%;padding:0;margin:0 0 18px;break-inside:avoid;border:0;border-radius:14px;overflow:hidden;background:#15161b}
+.photography-gallery .photo-masonry img{width:100%;height:auto;aspect-ratio:auto;display:block;object-fit:contain;filter:none;transition:filter .2s}
+.photo-masonry button:hover img{filter:brightness(1.08)}
+.photography-world button:focus-visible{outline:2px solid #eeedf0;outline-offset:4px}
+.photo-contact-section,.photo-footer{border-color:#282a32}
+.photography-intro p,.photo-contact-section p{color:#bfc0c8!important}
+.photography-contact{border:0;background:#23252d;color:#eee}
+@media(max-width:1100px){.photo-masonry{columns:3}.photo-mosaic{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:800px){.photo-hero{min-height:560px}.photo-mosaic{grid-auto-rows:120px;gap:8px}.photo-hero-copy{padding:20px;width:90%;top:46%}.portfolio-content .photo-hero h2{font-size:34px;margin-bottom:16px}.photo-masonry{columns:2;column-gap:12px}.photography-gallery .photo-masonry button{margin-bottom:12px}.photo-mosaic button>span{font-size:11px}.photo-hero-copy small{font-size:11px}.photo-album-tabs{gap:6px}.photography-gallery .photo-album-tabs button{padding:10px 12px}}
+@media(max-width:480px){.photo-mosaic{grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:110px}.photo-mosaic button:nth-child(7n+2){grid-column:span 1}.photo-mosaic button>span{display:none}.photo-hero-copy small{font-size:0}.photo-hero-copy small::after{content:'Нажми на снимок, чтобы открыть подборку.';font-size:11px}.photo-hero-copy{top:43%}.photo-masonry{column-gap:9px}.photography-gallery .photo-masonry button{margin-bottom:9px;border-radius:10px}}
+@media(prefers-reduced-motion:reduce){.photo-mosaic img,.photo-mosaic button>span,.photo-masonry img{transition:none}}
+
+.photography-world>.photo-about{grid-template-columns:190px minmax(0,700px);gap:48px;align-items:stretch}
+.photography-symbol-frame{position:relative;min-width:0;align-self:stretch}
+.photography-world .photography-symbol-frame .photography-symbol{position:absolute;inset:0;width:auto;height:100%;max-width:100%;object-fit:contain;object-position:left top;justify-self:start}
+.portfolio-content .photo-about>div:last-child>p:last-child{margin-bottom:0}
+body[data-world=photography] .photography-world a:hover,body[data-world=photography] .photography-world a:focus-visible,body[data-world=photography]>header a:hover,body[data-world=photography]>header a:focus-visible{color:#d6aa87}
+@media(max-width:800px){.photography-world>.photo-about{grid-template-columns:90px minmax(0,1fr);gap:22px}.photography-world .photography-symbol-frame .photography-symbol{position:static;width:90px;height:auto;max-width:100%}.photography-symbol-frame{align-self:start}}
+@media(max-width:480px){.photography-world>.photo-about{grid-template-columns:64px minmax(0,1fr);gap:18px}.photography-world .photography-symbol-frame .photography-symbol{width:64px}}
