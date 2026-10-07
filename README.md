@@ -1,34 +1,82 @@
-# SoulArt / KRTY || Maria — Portfolio
+<div align="center">
 
-Готовый статический сайт для GitHub Pages в чёрно-розовом стиле. Без сборки и установки зависимостей.
+[![Kartaamigo - Maria Matveeva](.github/readme/cover.png)](https://kartaamigo.github.io/)
 
-## Материалы
+**Дизайн, фотография и цифровые проекты Марии Матвеевой.**
 
-Русские тексты, контакты, опыт, образование, навыки, инструменты и четыре работы перенесены из публичного профиля https://github.com/kartaamigo и README.ru.md на 1 октября 2026 года. Обложки, иконки инструментов и кнопки социальных сетей — исходные файлы из репозитория kartaamigo/kartaamigo. Иллюстрация персонажа предоставлена пользователем. Новая генерация изображений не выполнялась.
+[Открыть сайт ↗](https://kartaamigo.github.io/) · [English version ↗](https://kartaamigo.github.io/index.en.html) · [Написать мне ↗](https://kartaamigo.github.io/personal-portfolio-concept/contacts.html)
 
-Все контакты ведут на адреса из профиля. Карточка проекта открывает превью с прямой ссылкой на соответствующий кейс Behance. Вёрстка адаптирована для телефона. Анимации учитывают настройку уменьшения движения.
+</div>
 
-## Публикация
+---
 
-1. Распакуй архив и загрузи его содержимое в корень репозитория GitHub. index.html должен лежать в корне.
-2. Settings → Pages → Deploy from a branch → main → / (root) → Save.
-3. GitHub покажет адрес опубликованного сайта.
+## Три направления. Один автор.
 
-Репозиторий сайта: https://github.com/kartaamigo/kartaamigo.github.io
+| SoulArt | RE: FORM | Картавый фотограф |
+| :--- | :--- | :--- |
+| Графический дизайн и визуальная коммуникация. | Цифровые продукты и авторские проекты. | Фотография и работа с изображением. |
+| Айдентика, обложки, постеры, вёрстка журналов и книг. | UI/UX, дизайн сайтов, интерфейсы и эксперименты. | Съёмки, серии и визуальные истории. |
 
-Русская версия: https://kartaamigo.github.io/
-Английская версия: https://kartaamigo.github.io/index.en.html
+## Внутри сайта
 
-Изменения в ветке main автоматически публикуются через GitHub Pages.
+[![Превью сайта Kartaamigo](.github/readme/preview.png)](https://kartaamigo.github.io/)
 
-## Изменения
+Русская и английская версии, адаптация для телефона, проекты с подробными кейсами и отдельная страница контактов. Сообщение можно отправить прямо с сайта.
 
-Тексты — index.html; данные проектов, инструменты и контакты — script.js; финальные стили — profile.css. Более ранние стили находятся в style.css и restyle.css.
+## Работы
 
-Все изображения хранятся локально в assets. Google Fonts требует интернет; предусмотрены системные запасные шрифты. Исходные тексты профиля сохранены в assets/profile/README.ru.source.md и README.en.source.md.
+| Проект | Направление |
+| :--- | :--- |
+| [Journal](https://www.behance.net/gallery/229126569/Journal-Full-fledged-layout-of-the-magazine) | Вёрстка журнала |
+| [RE: FORM LIFE](https://www.behance.net/gallery/256292513/Demo-version-of-the-project-RE-FORM-LIFE) | Цифровой проект |
+| [XFit Rebranding](https://www.behance.net/gallery/249997653/XFit-Rebranding) | Айдентика и ребрендинг |
+| [Brand Book GxSoul/KRTY](https://www.behance.net/gallery/246885793/Brand-Book-GxSoulKRTY) | Фирменный стиль и брендбук |
 
-## RE: FORM и две языковые версии
+Ещё больше работ - на [Behance](https://www.behance.net/tuumiyurmirazh).
 
-Добавлен полный раздел авторской студии RE: FORM и карточка RE: FORM LIFE по тексту пользователя. Изображения зайцев и логотипы предоставлены пользователем; белый фон студийного знака удалён. Ссылки на действующее приложение RE: FORM LIFE не предоставлялись, поэтому карточка предлагает обсудить проект через Telegram.
+## На связи
 
-index.html — русская версия; index.en.html — английская версия. RU / EN сохраняет текущий раздел. Переведены все текстовые разделы и описания проектов. Общие социальные кнопки остаются оригинальными двуязычными изображениями GitHub. Корона логотипа исправлена, имя Maria Matveeva увеличено.
+[Telegram](https://t.me/designeramigo) · [Почта](mailto:xghostxsoulx@gmail.com) · [WhatsApp](https://wa.me/79775243501)
+
+[Behance](https://www.behance.net/tuumiyurmirazh) · [GitHub](https://github.com/kartaamigo) · [Pinterest](https://ru.pinterest.com/x1ghostxsoul1x/)
+
+<details>
+<summary><strong>Как устроен сайт</strong></summary>
+
+Статический сайт на HTML, CSS и JavaScript, опубликованный через GitHub Pages. Шрифты и изображения хранятся вместе с сайтом; сборка и установка зависимостей для запуска не нужны.
+
+**Опубликованная версия находится в ветке [`gh-pages`](https://github.com/kartaamigo/kartaamigo.github.io/tree/gh-pages).** GitHub Pages использует корень этой ветки. Ветка `main` содержит более раннюю версию и описание проекта.
+
+```text
+index.html                    Главная страница на русском
+index.en.html                 Главная страница на английском
+personal-portfolio-concept/   Разделы, стили и интерактивные элементы
+dual-world/                   Визуальное оформление
+shared-fonts/                 Локальные шрифты и их лицензии
+favicon.ico                   Значок сайта
+robots.txt · sitemap.xml      Файлы для поисковых систем
+```
+
+Для локального просмотра опубликованной версии:
+
+```bash
+git clone --branch gh-pages https://github.com/kartaamigo/kartaamigo.github.io.git
+cd kartaamigo.github.io
+python -m http.server 8080
+```
+
+Откройте `http://localhost:8080/`.
+
+Исходные лицензии шрифтов находятся в `shared-fonts`. Работы и авторские изображения принадлежат их правообладателям; этот репозиторий не предоставляет разрешение на их повторное использование.
+
+</details>
+
+---
+
+<div align="center">
+
+**KARTAAMIGO** · Maria Matveeva
+
+[kartaamigo.github.io](https://kartaamigo.github.io/)
+
+</div>
